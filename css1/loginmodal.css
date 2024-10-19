@@ -1,0 +1,39 @@
+.btn-custom {
+  background-color: #ff69b4; /* Custom pink color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  color: white;
+}
+
+.modal-header {
+  background-color: #ff69b4;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-content {
+  border-radius: 5px;
+}
+
+.modal-body .form-control {
+  border-radius: 25px;
+}
+
+.modal-body .btn-primary {
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-body .btn-primary:hover {
+  background-color: #ff1493;
+}

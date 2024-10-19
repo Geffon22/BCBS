@@ -1,0 +1,27 @@
+
+
+/*** footer start ***/
+.footer {
+    background: #a732ad;
+}
+
+.footer .footer-item a,
+.footer .footer-item p {
+    color: var(--bs-white);
+    line-height: 40px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.footer .footer-item a:hover {
+    letter-spacing: 2px;
+    color: var(--bs-primary) !important;
+}
+
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+    background: #a732ad;
+}
+/*** copyright end ***/

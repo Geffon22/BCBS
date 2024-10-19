@@ -1,0 +1,80 @@
+/* Sidebar Styling */
+nav.sidebar {
+  background-color: #C25283; /* Bright pink background */
+  color: #FFFFFF; /* White text color */
+  width: 309px; /* Fixed width */
+  height: 100vh; /* Full height */
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Sidebar Links Styling */
+#leftCol {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Sidebar Links */
+#leftCol a {
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center; /* Center items vertically */
+  padding: 15px 20px; /* Padding for links */
+  color: #FFFFFF; /* White text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, padding-left 0.3s; /* Smooth transition */
+}
+
+/* Hover Effect */
+#leftCol a:hover {
+  background-color: #F660AB; /* Slightly darker pink for hover effect */
+  padding-left: 25px; /* Add left padding on hover */
+}
+
+/* Scrollbar Styling */
+#leftCol::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+#leftCol::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white for the track */
+  border-radius: 10px; /* Rounded track */
+}
+
+/* Handle */
+#leftCol::-webkit-scrollbar-thumb {
+  background: #888; /* Gray color for the scrollbar handle */
+  border-radius: 10px; /* Rounded handle */
+}
+
+/* Handle on hover */
+#leftCol::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+}
+
+/* Submenu Styling */
+.nav-second-level {
+  display: none; /* Hidden by default */
+  padding-left: 20px; /* Indentation for submenu */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+}
+
+/* Show submenu when active */
+.active .nav-second-level {
+  display: block; /* Show submenu when parent is active */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  nav.sidebar {
+      width: 60px; /* Collapsed width */
+  }
+
+  #leftCol a {
+      justify-content: center; /* Center content in collapsed view */
+  }
+}
